@@ -22,13 +22,15 @@ public class PizzaBase {
     @ManyToOne
     @JoinColumn(name = "pizza_size_id")
     private PizzaSize pizzaSize;
+    private Double price;
     private Boolean ordered;
     private Boolean deleted;
     private OffsetDateTime createDate;
 
-    public PizzaBase(PizzaType pizzaType, PizzaSize pizzaSize, Boolean ordered, Boolean deleted) {
+    public PizzaBase(PizzaType pizzaType, PizzaSize pizzaSize, Double price, Boolean ordered, Boolean deleted) {
         this.pizzaType = pizzaType;
         this.pizzaSize = pizzaSize;
+        this.price = price;
         this.ordered = ordered;
         this.deleted = deleted;
         this.createDate = OffsetDateTime.now();
