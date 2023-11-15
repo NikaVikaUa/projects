@@ -1,14 +1,14 @@
 spring:
-datasource:
-driverClassName: org.postgresql.Driver
-url: jdbc:postgresql://localhost:5432/pizza
-username: postgres
-password: ROOT
-jpa:
-show-sql: true
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/pizza
+    username: postgres
+    password: ROOT
+  jpa:
+    show-sql: true
 
-#logging:
-#  file:
-#    name: hello-liquibase.log
+logging:
+  file:
+    name: tomate-pizza.log
 #  level:
 #    spring: INFO

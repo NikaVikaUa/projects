@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/news_crawler
+    name: postgres
+    password: ROOT
+logging:
+  file:
+    name: news-crawler.log
